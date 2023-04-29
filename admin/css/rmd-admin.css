@@ -1,0 +1,119 @@
+#page-login{
+	background: #0e0d0d url(../images/rmd_login_bg.gif) 50% 0 no-repeat;
+	background-color:Black;
+}
+#page-login .login-container{
+	width: 587px;
+	background: none;
+	padding-left: 0;
+	margin: 100px auto;
+}
+
+
+#page-login .login-container .login-header{
+	text-align: left;
+	height: 77px;
+}
+
+#page-login .login-container #messages{
+	height: 20px;
+}
+
+#page-login .login-container .login-box{
+	background: #ffffff url(../images/rmd_box_bg.gif) 0 0 no-repeat;
+	height: 249px;
+}
+
+#page-login .login-form .form-buttons{
+	margin-top: 2px;
+}
+
+#page-login .login-form .form-buttons .form-button{
+	width: 83px;
+	background:none;
+	background:#FFAC47 url(../images/rmd_btn_login.gif) no-repeat scroll 0 100%;
+	border: 0px;
+	height: 24px;
+}
+#page-login .login-form .form-help{
+	padding-top:48px;
+}
+#page-login .login-form .form-help p{
+	clear: both;
+	display: block;
+	line-height: 14px;
+}
+#page-login .login-form .form-help p a{
+	color: #ffffff;
+	font-size: 10px;
+	line-height: 14px;
+}
+#page-login .login-form .form-help p a:hover{
+	text-decoration: none;
+}
+
+
+#page-login .login-form{
+	background: none;
+}
+
+#page-login .login-container .legal{
+	background: none;
+}
+#page-login .login-box .bottom{
+	background: none;
+}
+
+#page-login .login-container .legal{
+	text-align: left;
+	font-size: 10px;
+}
+#page-login .login-container .legal a{
+	color: #cccccc;
+	text-decoration: none;
+	font-family:Arial;
+	font-size:10px;
+}
+#page-login .login-container .legal a:hover{
+	text-decoration: underline;
+}
+#page-login .login-container .legal a.orange{
+	font-weight: normal;
+	color: #fd7d00;
+}
+
+#page-login .login-container .legal .copyright{
+	float: right;
+	color: #4d4c4c;
+}
+#page-login .login-container .legal .copyright a{
+	color: #4d4c4c;
+}
+#page-login .login-container .legal .contact{
+	padding-top: 3px;
+	color: #cccccc;
+}
+#page-login .login-container .legal .contact a{
+	font-size: 11px;
+}
+#page-login .login-container .legal .contact img{
+	vertical-align: middle;
+}
+
+
+#page-login .login-form{
+	height: 180px;
+}
+
+
+
+
+.header{
+	background: #141112 url(../images/rmd_header_bg.gif) right 0 no-repeat;
+}
+.header-top {
+	border-bottom:0px solid #141112;
+}
+.nav-bar{
+	/*border-top: 1px solid #141112;*/
+}

@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageWide.master.cs" Inherits="MasterPageWide" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="Title1" runat="server">District Export Council</title>
+    <meta id="metaDesc" name="description" runat="server" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta id="metaKeywords" runat="server" name="keywords" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta id="Meta2" content="sandiegodec" name="keywords" runat="server" />
+    <meta name="title" content="San Diego District Export Council" />
+    <meta name="ROBOTS" content="INDEX,FOLLOW" />
+    <meta name="description" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta name="abstract" content="San Diego District Export Council" />
+    <meta name="author" content="Robert Moorehouse" />
+    <meta name="publisher" content="Robert Moorehouse Designs" />
+    <meta name="copyright" content="Robert Moorehouse Designs" />
+    <meta http-equiv="Reply-to" content="robert@moorehouse.eu" />
+    <meta name="revisit-after" content="7 days" />
+    <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="css/sandiego_dec.css" id="stylesheet"
+        runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- HEADER -->
+    <div class="wrap">
+        <div class="header">
+            <div class="abs_left">
+                <a href="default.aspx"><asp:Image ID="img_head_dec" runat="server" ImageUrl="userfiles/image/websitebranding/Dec_logo.jpg" BorderStyle="none" /></a>
+            </div>
+            <div class="abs_left">
+                <!--<asp:Image ID="img_head_san_diego" runat="server" ImageUrl="userfiles/image/websitebranding/san_diego.jpg" /></div>-->
+                <div class="abs_right">
+                    <asp:Image ID="img_head_leadership" runat="server" ImageUrl="userfiles/image/websitebranding/leadership.jpg" /></div>
+                <br />
+                <br />
+                <div class="div_menu">
+                    <ul class="menu" style="">
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_1" runat="server">
+                                <asp:Image ID="img_head_menu_1" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_home.gif" />
+                            </asp:HyperLink>
+                        </li>
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_2" runat="server">
+                                <asp:Image ID="img_head_menu_2" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_news.gif" />
+                            </asp:HyperLink>
+                        </li>
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_3" runat="server">
+                                <asp:Image ID="img_head_menu_3" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_learn.gif" />
+                            </asp:HyperLink>
+                        </li>
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_4" runat="server">
+                                <asp:Image ID="img_head_menu_4" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_resources.gif" />
+                            </asp:HyperLink>
+                        </li>
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_5" runat="server">
+                                <asp:Image ID="img_head_menu_5" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_pressmedia.gif" />
+                            </asp:HyperLink>
+                        </li>
+                        <li class="menu_item">
+                            <asp:HyperLink ID="hyp_head_menu_6" runat="server">
+                                <asp:Image ID="img_head_menu_6" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_corporatepartner.gif" />
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 975px; float: left;">
+                &nbsp;</div>
+            <!-- PAGE BANNER IMAGE -->
+            <div class="abs_left">
+                <asp:ContentPlaceHolder ID="cphTopImage" runat="server">
+                    <asp:Image ID="img_head_bigpic" runat="server" ImageUrl="userfiles/image/websitebranding/pageheaders/head2.jpg" />
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- END PAGE BANNER IMAGE -->
+            <div style="width: 975px; float: left;">
+                &nbsp;</div>
+        </div>
+        <!-- END HEADER -->
+    <div class="wrap">
+        <!-- Table Left -->
+        <asp:ContentPlaceHolder ID="cphLeftNav" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        <!-- end Table Left -->
+        <!-- Table Middle Full-->
+        <div class="table_mid_full">
+            <asp:ContentPlaceHolder ID="cphMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- end Table Middle -->
+    </div>
+    </form>
+</body>
+</html>

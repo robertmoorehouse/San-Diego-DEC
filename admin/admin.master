@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>RMD Admin Pages</title>
+    <asp:contentplaceholder id="head" runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="text/css" rel="stylesheet" href="css/reset.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="css/boxes.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="css/rmd-admin.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="css/menu.css" media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="css/calendar-win2k-1.css" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <script language="javascript" type="text/javascript" src="js/prototype-1.6.0.3.js" />
+        <%--<script language="javascript" type="text/javascript" src="js/calendar-setup.js" />
+        <script language="javascript" type="text/javascript" src="js/dbMenu.js" />--%>
+        <script type="text/javascript">
+            var BLANK_URL = 'http://www.sandiegoivdec.org/admin/js/blank.html';
+            var BLANK_IMG = 'http://www.sandiegoivdec.org/admin/images/spacer.gif';
+            var BASE_URL = 'http://www.sandiegoivdec.org/admin/';
+            var SKIN_URL = 'http://www.sandiegoivdec.org/admin/images';
+            var FORM_KEY = 'eLdcSgNt7s6d2los';
+            </script>
+
+            <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="css/iestyles.css" media="all" />
+        <![endif]-->
+            <!--[if lt IE 7]>
+        <script type="text/javascript" src="css/iehover-fix.js" ></script>
+        <link rel="stylesheet" type="text/css" href="css/below_ie7.css" media="all" />
+        <![endif]-->
+            <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie7.css" media="all" />
+        <![endif]-->
+    </asp:contentplaceholder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <asp:ContentPlaceHolder ID="cph_header" runat="server">
+                <div class="header">
+                    <div class="header-top">
+                        <div class="header-right">
+                            <p class="super">
+                                Logged in as
+                                <asp:Label ID="lblLoggedinas" runat="server" Text="admin"></asp:Label><span class="separator">|</span><asp:Label
+                                    ID="lblDate" runat="server" Text=""></asp:Label><span class="separator">|</span><a
+                                        href="login.aspx" class="link-logout">Log Out</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <!-- menu start -->
+                    <div class="nav-bar">
+                        <ul id="nav">
+                            <li id="members" runat="server" onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')"
+                                class="parent level0"><a href="#" onclick="return false" class=""><span>Members</span></a>
+                                <ul>
+                                    <li class="level1"><a href="members_list.aspx" class=""><span>Manage Members</span></a>
+                                    </li>
+                                    <li class="level1"><a href="members_addnew.aspx?member=new" class=""><span>Add New Member</span></a>
+                                    </li>
+                                    </ul>
+                            </li>
+                            <li id="cms" runat="server" onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')"
+                                class="parent level0"><a href="#" onclick="return false" class=""><span>CMS</span></a>
+                                <ul>
+                                    <li class="level1"><a href="cms_managepages.aspx" class=""><span>Manage Pages</span></a>
+                                    </li>
+                                    <li class="last level1"><a href="cms_managemenus.aspx" class=""><span>Manage Page Menu's</span></a>
+                                    </li>
+                                    <li class="level1"><a href="cms_pageeditor.aspx?page=new" class=""><span>Add New Page</span></a>
+                                    </li>
+                                    <li class="level1"><a href="cms_menueditor.aspx?menu=new" class=""><span>Add New Menu</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="events" runat="server" onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')"
+                                class="parent level0"><a href="#" onclick="return false" class=""><span>Manage Events</span></a>
+                                <ul>
+                                <li class="level1"><a href="cms_manageevents.aspx" class=""><span>Manage Events</span></a>
+                                    </li>
+                                    <li class="level1"><a href="cms_eventeditor.aspx?event=new" class=""><span>Add New Event</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li id="filemanager" runat="server" onmouseover="Element.addClassName(this,'over')"
+                                onmouseout="Element.removeClassName(this,'over')" class="parent level0"><a href="http://www.sandiegoivdec.org/fckeditor/editor/filemanager/browser/default/browser.html?Connector=http%3A%2F%2Fwww.sandiegoivdec.org%2Ffckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx"
+                                    class="" target="_blank"><span>File Manager</span></a>
+                                <ul>
+                                <li class="level1"><a href="/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http%3A%2F%2Fwww.sandiegoivdec.org%2Ffckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx" class="" target="_blank"><span>Images</span></a>
+                                    </li>
+                                    <li class="level1"><a href="/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector=http%3A%2F%2Fwww.sandiegoivdec.org%2Ffckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx" class="" target="_blank"><span>Files</span></a>
+                                    </li>
+                                    <li class="level1"><a href="/fckeditor/editor/filemanager/browser/default/browser.html?Type=Flash&Connector=http%3A%2F%2Fwww.sandiegoivdec.org%2Ffckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx" class="" target="_blank"><span>Flash</span></a>
+                                    </li>
+                                    <li class="level1"><a href="/fckeditor/editor/filemanager/browser/default/browser.html?Type=Media&Connector=http%3A%2F%2Fwww.sandiegoivdec.org%2Ffckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx" class="" target="_blank"><span>Media</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li id="help" runat="server" onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')"
+                                class="parent level0"><a href="help/helpfile.htm" class="" target="_blank"><span>Help</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- menu end -->
+                </div>
+            </asp:ContentPlaceHolder>
+            <div class="middle" id="anchor-content">
+                <div id="page:main-container">
+                    <asp:ContentPlaceHolder ID="cph_content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="legality">
+                    <a href="http://www.moorehouse.eu/" id="A2" target="_blank">Site by Robert Moorehouse
+                        +61 4503 12345.</a>
+                </p>
+            </div>
+        </div>
+        <div id="loading-mask" style="display: none;">
+            <p class="loader" id="loading_mask_loader">
+                <img src="images/ajax-loader-tr.gif" alt="Loading..." /><br />
+                Please wait...</p>
+        </div>
+        <div class="content-header-floating">
+            <div class="content-header">
+                <table cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3 class="head-dashboard">
+                                    <asp:Label ID="lblHeaddashboard" runat="server" Text="Dashboard"></asp:Label></h3>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

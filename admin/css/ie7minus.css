@@ -1,0 +1,18 @@
+.middle {
+	HEIGHT: 350px
+}
+.link-feed {
+	ZOOM: 1
+}
+.product-img-box .more-views LI {
+	DISPLAY: inline
+}
+#nav LI.over UL.shown-sub {
+	LEFT: -1px
+}
+#nav LI.over LI UL.shown-sub {
+	LEFT: 100px
+}
+IFRAME.hover-fix {
+	Z-INDEX: -1; BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); LEFT: -1px; POSITION: absolute; TOP: 0px
+}

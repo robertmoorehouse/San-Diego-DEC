@@ -1,0 +1,158 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head id="Head1" runat="server">
+    <title id="Title1" runat="server">District Export Council</title>
+    <meta id="metaDesc" name="description" runat="server" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta id="metaKeywords" runat="server" name="keywords" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta id="Meta2" content="sandiegodec" name="keywords" runat="server" />
+    <meta name="title" content="San Diego District Export Council" />
+    <meta name="ROBOTS" content="INDEX,FOLLOW" />
+    <meta name="description" content="San Diego district exporting assistance for companies wishing to export from the san diego area" />
+    <meta name="abstract" content="San Diego District Export Council" />
+    <meta name="author" content="Robert Moorehouse" />
+    <meta name="publisher" content="Robert Moorehouse Designs" />
+    <meta name="copyright" content="Robert Moorehouse Designs" />
+    <meta http-equiv="Reply-to" content="robert@moorehouse.eu" />
+    <meta name="revisit-after" content="7 days" />
+    <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="css/sandiego_dec.css" id="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- HEADER -->
+        <div class="wrap">
+            <div class="header">
+                <div class="abs_left">
+                    <a href="default.aspx">
+                        <asp:Image ID="img_head_dec" runat="server" ImageUrl="userfiles/image/websitebranding/Dec_logo.jpg"
+                            BorderStyle="none" AlternateText="San Diego DEC Logo" /></a>
+                </div>
+                <div class="abs_left">
+                    <!--<asp:Image ID="img_head_san_diego" runat="server" ImageUrl="userfiles/image/websitebranding/san_diego.jpg" /></div>-->
+                    <div class="abs_right">
+                        <asp:Image ID="img_head_leadership" runat="server" ImageUrl="userfiles/image/websitebranding/leadership.jpg" AlternateText="San Diego DEC Leadership Image" /></div>
+                    <br />
+                    <br />
+                    <div class="div_menu">
+                        <ul class="menu" style="">
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_1" runat="server">
+                                    <asp:Image ID="img_head_menu_1" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_home.gif" AlternateText="Home"/>
+                                </asp:HyperLink>
+                            </li>
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_2" runat="server">
+                                    <asp:Image ID="img_head_menu_2" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_news.gif"  AlternateText="News"/>
+                                </asp:HyperLink>
+                            </li>
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_3" runat="server">
+                                    <asp:Image ID="img_head_menu_3" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_learn.gif"  AlternateText="Learn"/>
+                                </asp:HyperLink>
+                            </li>
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_4" runat="server">
+                                    <asp:Image ID="img_head_menu_4" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_resources.gif"  AlternateText="Resources"/>
+                                </asp:HyperLink>
+                            </li>
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_5" runat="server">
+                                    <asp:Image ID="img_head_menu_5" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_pressmedia.gif" AlternateText="Press" />
+                                </asp:HyperLink>
+                            </li>
+                            <li class="menu_item">
+                                <asp:HyperLink ID="hyp_head_menu_6" runat="server">
+                                    <asp:Image ID="img_head_menu_6" runat="server" BorderStyle="None" ImageUrl="userfiles/image/websitebranding/headermenuitems/menu_corporatepartner.gif"  AlternateText="Partners"/>
+                                </asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 975px; float: left;">
+                    &nbsp;</div>
+                <!-- PAGE BANNER IMAGE -->
+                <div class="abs_left">
+                    <asp:ContentPlaceHolder ID="cphTopImage" runat="server">
+                        <asp:Image ID="img_head_bigpic" runat="server" ImageUrl="userfiles/image/websitebranding/pageheaders/head2.jpg"  AlternateText="Page Header Image"/>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- END PAGE BANNER IMAGE -->
+                <div style="width: 975px; float: left;">
+                    &nbsp;</div>
+            </div>
+            <!-- END HEADER -->
+            <div class="wrap">
+                <!-- Table Left -->
+                <asp:ContentPlaceHolder ID="cphLeftNav" runat="server">                    
+                </asp:ContentPlaceHolder>
+                <!-- end Table Left -->
+                <!-- Table Middle -->
+                <div class="table_mid">
+                    <asp:ContentPlaceHolder ID="cphMainContent" runat="server">                        
+                    </asp:ContentPlaceHolder>
+                    <div style="clear: both">
+                    </div>
+                </div>
+                <!-- end Table Middle -->
+                <!-- Table Right -->
+                <div class="table_right">
+                    <div style="width: 190; float: right">
+                        <asp:ContentPlaceHolder ID="cphRightNav" runat="server">
+                            <div style="width: 181; float: right">
+                                <asp:Image ID="img_right_solar" runat="server" ImageUrl="userfiles/image/websitebranding/pic_rightmenu.jpg"  AlternateText="Join Our Newsletter List"/></div>
+                            <div style="width: 181; height: 40; float: right; background-image: url(userfiles/image/websitebranding/dot-h2.gif)">
+                                &nbsp;</div>
+                            <asp:Panel ID="pnlRegister" runat="server">
+                                <div class="table_right_title">
+                                    Join our mailing list</div>
+                                <div style="width: 181; float: right">
+                                    <div class="firstLastNameRow">
+                                        <div class="firstLastNameCol">
+                                            First Name</div>
+                                        <div class="firstLastNameCol">
+                                            Last Name</div>
+                                    </div>
+                                    <div class="firstLastNameRow">
+                                        <div class="firstLastNameCol">
+                                            <asp:TextBox ID="txtFirstName" TextMode="SingleLine" Style="width: 75"
+                                                runat="server" /></div>
+                                        <div class="firstLastNameCol">
+                                            <asp:TextBox ID="txtLastName" TextMode="SingleLine" Style="width: 75"
+                                                runat="server" /></div>
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <p>
+                                        <br />
+                                        Email Address
+                                        <asp:TextBox ID="txtEmail" TextMode="SingleLine" Style="width: 170" runat="server" />
+                                        <br />
+                                        <br />
+                                        <asp:Button ID="btnRegister" runat="server" Text="Register" Style="background-color: #6288AF;
+                                            color: White;" OnClick="btnRegister_Click" />
+                                    </p>
+                                </div>
+                            </asp:Panel>
+                            <asp:Panel ID="pnlJoined" runat="server" Visible="false">
+                                <div class="table_right_title">
+                                    Thank you for joining our mailing list<br />
+                                    <br />
+                                </div>
+                            </asp:Panel>
+                            <div style="width: 181; height: 40; float: right; background-image: url(userfiles/image/websitebranding/dot-h2.gif)">
+                                &nbsp;</div>
+                            <div style="float: right">
+                                <img src="userfiles/image/websitebranding/pic_right.jpg" alt="" style="text-align:right;" /></div>
+                            <div>
+                            </div>
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div style="clear: both">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

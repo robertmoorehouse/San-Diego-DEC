@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+  <head>
+    <meta name="generator" content="HelpNDoc Standard Edition">
+    <link rel="StyleSheet" href="toc.css" type="text/css"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.treeview.min.js"></script>
+    <script type="text/javascript" src="searchdata.js"></script>
+    <script type="text/javascript"><!--
+      $(document).ready(function(){
+        $("#toc").treeview(); $("#keywords").treeview();
+        $(document.body).click(function(e){var $target = $(e.target); if($target.is("a")) return; hidePopup();});
+        $(function(){var tabContainers = $("div.tabs > div");tabContainers.hide().filter(":first").show();$("div.tabs ul.tabNavigation a").click(function(){tabContainers.hide();
+        tabContainers.filter(this.hash).show();$("div.tabs ul.tabNavigation a").removeClass("selected");$(this).addClass("selected");return false;}).filter(":first").click();});
+      });
+      function hidePopup() {if($("#popupMenu")) $("#popupMenu").remove();}
+      function showPopup(oSender,aLinks){hidePopup();if (aLinks==0) return true;var oParentDiv=document.createElement("DIV");oParentDiv.id="popupMenu";var oLink,oBr=null;
+      for (var nCnt=0;nCnt<aLinks.length;nCnt++){oLink=document.createElement("A");oLink.innerHTML=aLinks[nCnt][0];oLink.href=aLinks[nCnt][1];oLink.target="FrameMain";oLink.onclick=hidePopup;
+      oParentDiv.appendChild(oLink);if (nCnt<aLinks.length-1){oBr=document.createElement("BR");oParentDiv.appendChild(oBr);}}document.body.appendChild(oParentDiv);var pos=$(oSender).offset(); 
+      var height=$(oSender).height();$(oParentDiv).css({"backgroundColor": "#EEEEEE","border": "1px solid #999999","position": "absolute","left": (pos.left+20)+"px","top": (pos.top+height+5)+"px",
+      "padding": 5+"px"});$(oParentDiv).show();return false;}
+      function performSearch(){sValue = $("#search_value").val().toLowerCase();if (oSearchData[sValue]){$("#search_results").html("Found " + oSearchData[sValue].length + " results");for (var nCnt = 0; nCnt < oSearchData[sValue].length; nCnt++){var oElmt = document.createElement("DIV");oElmt.innerHTML = "<a href='" + oSearchData[sValue][nCnt][0] + "' target='FrameMain'>" + oSearchData[sValue][nCnt][1] + "</a> (" + oSearchData[sValue][nCnt][2] + ")<br/>";$(oElmt).appendTo($("#search_results"));}}else{$("#search_results").html("No result found");}}
+    //--></script>
+    <style type="text/css">
+      ul.tabNavigation{list-style: none;margin: 0;padding: 10px;}ul.tabNavigation li{display: inline;}ul.tabNavigation li A{padding: 3px 5px;background-color: #ccc;color: #000;
+      text-decoration: none;}ul.tabNavigation li A.selected,ul.tabNavigation li A:hover{background-color: #333;color: #fff;}ul.tabNavigation li A:focus{outline: 0;}
+      </style>
+  </head>
+
+  <body>
+  
+    <div class="tabs">
+      <ul class="tabNavigation">
+        <li><a href="#tab_toc">Contents</a></li>
+        <li><a href="#tab_keywords">Index</a></li>
+        <li><a href="#tab_search">Search</a></li>
+      </ul>
+      <div id="tab_toc">
+        <ul id="toc" class="filetree">
+          
+          <li>
+            <a href="Dashboard.html" class="file" target="FrameMain">Dashboard</a>
+          </li>
+          
+          <li>
+            <a href="Sales.html" class="file" target="FrameMain">Sales</a>
+          </li>
+          
+          <li>
+            <a href="Catalog.html" class="file" target="FrameMain">Catalog</a>
+          </li>
+          
+          <li>
+            <a href="MembersCustomers.html" class="file" target="FrameMain">Members / Customers</a>
+          </li>
+          
+          <li>
+            <a href="CMS.html" class="file" target="FrameMain">CMS</a>
+          </li>
+          
+          <li>
+            <a href="WYSWYGEditor.html" class="folder" target="FrameMain">FCKEditor 2.x</a>
+            <ul>
+              
+              <li>
+                <a href="IntroductiontotheUsersGuide.html" class="file" target="FrameMain">Introduction to the User\'s Guide</a>
+              </li>
+              
+              <li>
+                <a href="Overview.html" class="file" target="FrameMain">Overview</a>
+              </li>
+              
+              <li>
+                <a href="QuickReference.html" class="file" target="FrameMain">Quick Reference</a>
+              </li>
+              
+              <li>
+                <a href="Interface.html" class="folder" target="FrameMain">Interface</a>
+                <ul>
+                  
+                  <li>
+                    <a href="Toolbar.html" class="file" target="FrameMain">Toolbar</a>
+                  </li>
+                  
+                  <li>
+                    <a href="EditingArea.html" class="file" target="FrameMain">Editing Area</a>
+                  </li>
+                  
+                  <li>
+                    <a href="ContextMenu.html" class="file" target="FrameMain">Context Menu</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="CommonTasks.html" class="folder" target="FrameMain">Common Tasks</a>
+                <ul>
+                  
+                  <li>
+                    <a href="Writing.html" class="folder" target="FrameMain">Writing</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="InternetthewebvsPaper.html" class="file" target="FrameMain">Internet(the web) vs Paper</a>
+                      </li>
+                      
+                      <li>
+                        <a href="TheENTERkey.html" class="file" target="FrameMain">The ENTER key</a>
+                      </li>
+                      
+                      <li>
+                        <a href="TheBACKSPACEkey.html" class="file" target="FrameMain">The BACKSPACE key</a>
+                      </li>
+                      
+                      <li>
+                        <a href="SeeAlso.html" class="file" target="FrameMain">See Also</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="TextFormatting.html" class="folder" target="FrameMain">Text Formatting</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="BoldItalicUnderlinedandStriket.html" class="file" target="FrameMain">Bold, Italic, Underlined and Strike-through</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Styles.html" class="file" target="FrameMain">Styles</a>
+                      </li>
+                      
+                      <li>
+                        <a href="TextAlignment.html" class="file" target="FrameMain">Text Alignment </a>
+                      </li>
+                      
+                      <li>
+                        <a href="ParagraphBlockFormat.html" class="file" target="FrameMain">Paragraph (Block) Format </a>
+                      </li>
+                      
+                      <li>
+                        <a href="Fonts.html" class="file" target="FrameMain">Fonts</a>
+                      </li>
+                      
+                      <li>
+                        <a href="TextSize.html" class="file" target="FrameMain">Text Size </a>
+                      </li>
+                      
+                      <li>
+                        <a href="Colors.html" class="file" target="FrameMain">Colors</a>
+                      </li>
+                      
+                      <li>
+                        <a href="SubscriptandSuperscript.html" class="file" target="FrameMain">Subscript and Superscript </a>
+                      </li>
+                      
+                      <li>
+                        <a href="Templates2.html" class="file" target="FrameMain">Templates</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="CreatingLists.html" class="folder" target="FrameMain">Creating Lists</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="NumberedLists.html" class="folder" target="FrameMain">Numbered Lists </a>
+                        <ul>
+                          
+                          <li>
+                            <a href="Creating.html" class="file" target="FrameMain">Creating</a>
+                          </li>
+                          
+                          <li>
+                            <a href="Properties.html" class="file" target="FrameMain">Properties</a>
+                          </li>
+                        </ul>
+                      </li>
+                      
+                      <li>
+                        <a href="BullettedLists.html" class="folder" target="FrameMain">Bulletted Lists </a>
+                        <ul>
+                          
+                          <li>
+                            <a href="Creating2.html" class="file" target="FrameMain">Creating</a>
+                          </li>
+                          
+                          <li>
+                            <a href="Properties2.html" class="file" target="FrameMain">Properties</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="LinksEMailsandAnchors.html" class="folder" target="FrameMain">Links, E-Mails and Anchors</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="URL.html" class="folder" target="FrameMain">URL</a>
+                        <ul>
+                          
+                          <li>
+                            <a href="LinkInfo.html" class="file" target="FrameMain">Link Info </a>
+                          </li>
+                          
+                          <li>
+                            <a href="Target.html" class="file" target="FrameMain">Target</a>
+                          </li>
+                          
+                          <li>
+                            <a href="Upload.html" class="file" target="FrameMain">Upload</a>
+                          </li>
+                          
+                          <li>
+                            <a href="Linktoanchorinthetext.html" class="file" target="FrameMain">Link to anchor in the text</a>
+                          </li>
+                        </ul>
+                      </li>
+                      
+                      <li>
+                        <a href="Email.html" class="folder" target="FrameMain">E-mail</a>
+                        <ul>
+                          
+                          <li>
+                            <a href="LinkInfo2.html" class="file" target="FrameMain">Link Info</a>
+                          </li>
+                          
+                          <li>
+                            <a href="Advancedoptions.html" class="file" target="FrameMain">Advanced options </a>
+                          </li>
+                        </ul>
+                      </li>
+                      
+                      <li>
+                        <a href="Anchors.html" class="file" target="FrameMain">Anchors</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="InsertingImages.html" class="folder" target="FrameMain">Inserting Images</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="ImageInfo.html" class="file" target="FrameMain">Image Info </a>
+                      </li>
+                      
+                      <li>
+                        <a href="Link.html" class="file" target="FrameMain">Link</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Upload2.html" class="file" target="FrameMain">Upload</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Advanced.html" class="file" target="FrameMain">Advanced</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="Tables.html" class="folder" target="FrameMain">Tables</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="Creatingatable.html" class="file" target="FrameMain">Creating a table</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Workingwiththetable.html" class="file" target="FrameMain">Working with the table </a>
+                      </li>
+                      
+                      <li>
+                        <a href="Cell.html" class="file" target="FrameMain">Cell</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Row.html" class="file" target="FrameMain">Row</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Column.html" class="file" target="FrameMain">Column</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="CutCopyandPaste.html" class="folder" target="FrameMain">Cut, Copy and Paste</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="Cut.html" class="file" target="FrameMain">Cut</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Copy.html" class="file" target="FrameMain">Copy</a>
+                      </li>
+                      
+                      <li>
+                        <a href="Paste.html" class="file" target="FrameMain">Paste</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="Templates.html" class="file" target="FrameMain">Templates</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="OtherTasks.html" class="folder" target="FrameMain">Other Tasks</a>
+                <ul>
+                  
+                  <li>
+                    <a href="FindandReplace.html" class="file" target="FrameMain">Find and Replace</a>
+                  </li>
+                  
+                  <li>
+                    <a href="UndoandRedo.html" class="file" target="FrameMain">Undo and Redo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="SpellChecking.html" class="folder" target="FrameMain">Spell Checking</a>
+                    <ul>
+                      
+                      <li>
+                        <a href="ieSpell.html" class="file" target="FrameMain">ieSpell</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="Printing.html" class="file" target="FrameMain">Printing</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="SourceEditor.html" class="file" target="FrameMain">Source Editor</a>
+              </li>
+              
+              <li>
+                <a href="KeyboardKeystrokes.html" class="file" target="FrameMain">Keyboard Keystrokes</a>
+              </li>
+              
+              <li>
+                <a href="Compatibility.html" class="file" target="FrameMain">Compatibility</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Enquiry.html" class="file" target="FrameMain">Enquiry</a>
+          </li>
+          
+          <li>
+            <a href="System.html" class="file" target="FrameMain">System</a>
+          </li>
+      </ul>
+    </div>
+    
+    <div id="tab_keywords">
+      <ul id="keywords" class="filetree">
+      </ul>
+    </div>
+    <div id="tab_search" style="padding:10px">
+      Search: <form onsubmit="performSearch(); return false;"><input id="search_value"></input><input type="submit" value="search"/></form><div id="search_results"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
